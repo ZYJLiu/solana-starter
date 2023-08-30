@@ -87,7 +87,7 @@ pub struct Initialize<'info> {
         seeds = [b"counter"],
         bump,
         payer = user,
-        space = Counter::INIT_SPACE)]
+        space = 8 + Counter::INIT_SPACE)]
     pub counter: Account<'info, Counter>,
     #[account(
         init,
